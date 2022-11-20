@@ -1,0 +1,24 @@
+Send Request
+get http://localhost:3344
+
+###
+Send Request
+get http://localhost:3344/adduser
+
+###
+post http://localhost:3344/echoPost
+content-type: application/x-www-form-urlencoded
+
+campo1=v1&fecha=12-4-2014
+
+###
+post http://localhost:3344/echoPostJson
+content-type: application/x-www-form-urlencoded
+
+{"campo1":"valor1"}
+
+###
+post http://localhost:3344/echoPostExtended
+content-type: application/x-www-form-urlencoded
+
+a=1&a=2&a=3&person[name]=jose&persona[age]=45
