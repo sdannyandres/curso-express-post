@@ -1,7 +1,7 @@
 const ex = require('express');
 
 const app = ex();
-
+app.use(ex.static("public"))
 app.use(ex.json())
 app.use(ex.urlencoded({extended:true}))
 
