@@ -23,15 +23,16 @@ content-type: application/x-www-form-urlencoded
 
 a=1&a=2&a=3&person[name]=jose&persona[age]=45
 
-
 ###
-post http://localhost:3344/echoParamsPost/222/facturas/32333?c=45a=2&b=2&c=3&c=5&c=3
+post http://localhost:3344/echoPost?c=45a=2&b=2&c=3&c=5&c=3
 content-type: application/x-www-form-urlencoded
 
 a=1&a=2&a=3&person[name]=jose&persona[age]=45
 
+
+
 ###
-post http://localhost:3344/echoPost?c=45a=2&b=2&c=3&c=5&c=3
+post http://localhost:3344/echoParamsPost/222/facturas/32333?c=45a=2&b=2&c=3&c=5&c=3
 content-type: application/x-www-form-urlencoded
 
 a=1&a=2&a=3&person[name]=jose&persona[age]=45
