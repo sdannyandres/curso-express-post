@@ -1,0 +1,2 @@
+::1 - - [21/Nov/2022:23:25:22 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3344/welcome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /favicon.ico 404 150 - 1.701 ms
