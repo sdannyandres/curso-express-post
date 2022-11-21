@@ -1,12 +1,27 @@
 const ex = require("express");
 const morgan = require("morgan");
+const fs = require("fs")
 const fileUpload = require("express-fileupload");
 const app = ex();
 
+
+const logOutputErrores = fs.createWriteStream("uploads/logsErrores.txt",{
+    flags: "a"
+})
+const logOutputBuenos = fs.createWriteStream("uploads/logsBuenos.txt",{
+    flags: "a"
+})
+app.use(morgan('combined', {
+    skip:(req, res) => res.statusCode < 400,
+    stream:logOutputErrores 
+}))
+
 app.use(morgan('tiny', {
-    skip: function (req, res) {
-        return res.statusCode < 400}
-    }))
+    skip:(req, res) => res.statusCode < 400,
+    stream:logOutputErrores 
+}))
+
+
 
 app.use(ex.static("public",{
     index:"myIndex.html"
