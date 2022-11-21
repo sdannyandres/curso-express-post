@@ -1,51 +1,30 @@
-const ex = require('express');
-
+const ex = require("express");
+const fileUpload = require("express-fileupload");
 const app = ex();
-app.use(ex.static("public"))
-app.use(ex.json())
-app.use(ex.urlencoded({extended:true}))
+app.use(ex.static("public",{
+    index:"myIndex.html"
+}))
 
-app.get("/", function (req, res) {
-    res.send("Hello World!")
+app.use(fileUpload({
+    limits: { fileSize: 50 * 1024 * 1024 }
+}))
 
-})
-
-
-app.post("/echoPost", (req, res) => {
-    res.send({body:req.body})
-
-})
-app.post("/echoPostJson", (req, res) => {
-    res.send({bodyJson:req.body})
+app.post("/uploadFicheros",async(req,res)=>{
+     const f1 = req.files.file1
+     await f1.mv('uploads/${f1.name}')
+     res.send({body:req.body, fichero:{
+        nombre : req.files.file1.name
+     }})
 
 })
-app.post("/echoPostExtended", (req, res) => {
-    res.send({bodyJson:req.body})
 
-})
-app.post("/echoPostJson", (req, res) =>{
-    res.send({bodyJson:req.body, qs:req.query})
-})
-
-app.post("/echoParamsPost/:cliente/facturas/:factura", (req, res) =>{
-    res.send({
-        body:req.body, 
-        query:req.query,
-        params:req.params
-    })
-})
-
-app.get("/echoParamsGet/:cliente/facturas/:factura", (req, res) =>{
-    res.send({
-        body:req.body, 
-        query:req.query,
-        params:req.params
-    })
-})
-
-
-app.post("/addUser", (req, res) => {
-    res.status(200).send("He añadido un usuario")
-    })
-
+app.post("/uploadFicherosMultiple", async (req, res) => {
+    for (const [index,file] of req.files.ficheros.entries()) {
+        await file.mv('uploads/${file.name}')
+    }
+    res.send("ficheros subidos")
+}
+)
+    
+        
 app.listen(3344)
