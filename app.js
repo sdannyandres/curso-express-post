@@ -66,17 +66,34 @@ app.post("/uploadFicherosMultiple", async (req, res) => {
 }
 )
 
-app.get("/bdd", async (req, res) => {
+app.get("/bdd/customers", async (req, res) => {
     try {
-        const respuesta = await pool.query("select now()fecha");
+        const respuesta = await pool.query("select * from customers");
         res.send(respuesta.rows)
     } catch (error) {
-        res.status(500).send({ error })
+        res.status(500).send(error)
 
     }
 
 })
 
+app.get("/bdd/customers/:id", async (req, res) => {
+    try {
+        const respuesta = await pool.query("select * from customers where customer_id = $1", [req.params.id])
+        res.send(respuesta.rows)
+    } catch (error) {
+        res.status(500).send(error)
+    }
+})
+
+app.get("/bdd/orders/:id", async (req, res) => {
+    try {
+        const respuesta = await pool.query("select * from orders where customer_id = $1", [req.params.id])
+        res.send(respuesta.rows)
+    } catch (error) {
+        res.status(500).send(error)
+    }
+})
 
 
 app.listen(3344)

@@ -1,2 +1,28 @@
 ::1 - - [21/Nov/2022:23:25:22 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3344/welcome" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
 GET /favicon.ico 404 150 - 1.701 ms
+::1 - - [21/Nov/2022:23:28:25 +0000] "GET /customers HTTP/1.1" 404 148 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /customers 404 148 - 4.272 ms
+::1 - - [21/Nov/2022:23:28:41 +0000] "GET /customers HTTP/1.1" 404 148 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /customers 404 148 - 3.710 ms
+::1 - - [21/Nov/2022:23:28:54 +0000] "GET /customers HTTP/1.1" 404 148 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /customers 404 148 - 3.696 ms
+::1 - - [21/Nov/2022:23:29:27 +0000] "GET /customers HTTP/1.1" 404 148 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /customers 404 148 - 0.819 ms
+::1 - - [21/Nov/2022:23:29:28 +0000] "GET /customers HTTP/1.1" 404 148 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /customers 404 148 - 0.655 ms
+::1 - - [21/Nov/2022:23:29:44 +0000] "GET /customers HTTP/1.1" 404 148 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /customers 404 148 - 2.034 ms
+::1 - - [21/Nov/2022:23:31:22 +0000] "GET /customers HTTP/1.1" 404 148 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /customers 404 148 - 6.727 ms
+::1 - - [21/Nov/2022:23:31:24 +0000] "GET /customers HTTP/1.1" 404 148 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /customers 404 148 - 3.515 ms
+::1 - - [21/Nov/2022:23:32:58 +0000] "GET /customers HTTP/1.1" 404 148 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /customers 404 148 - 14.248 ms
+::1 - - [21/Nov/2022:23:40:53 +0000] "GET /bdd/customers/Anders HTTP/1.1" 500 150 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /bdd/customers/Anders 500 150 - 251.225 ms
+::1 - - [21/Nov/2022:23:41:17 +0000] "GET /bdd/customers/ANATR HTTP/1.1" 500 150 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /bdd/customers/ANATR 500 150 - 221.385 ms
+::1 - - [21/Nov/2022:23:41:23 +0000] "GET /bdd/customers/ANATR HTTP/1.1" 500 150 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /bdd/customers/ANATR 500 150 - 136.643 ms
+::1 - - [21/Nov/2022:23:41:41 +0000] "GET /bdd/customers/ALFKI HTTP/1.1" 500 150 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /bdd/customers/ALFKI 500 150 - 202.967 ms
