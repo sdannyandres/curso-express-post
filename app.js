@@ -106,6 +106,8 @@ app.get("/bdd/orders/:cliente/:id", async (req, res) => {
         res.status(500).send(error)
     }
 })
+
+//-- ruta para acceder a metamask desde mi aplicacion--//
 app.get("/web3/balance/:address", async (req, res) => {
         try {
             const balance = await web3.eth.getBalance(req.params.address)
