@@ -30,3 +30,39 @@ GET /bdd/customers/ALFKI 500 150 - 202.967 ms
 GET /bdd/orders/ANATR/106251 500 2 - 237.622 ms
 ::1 - - [22/Nov/2022:00:05:18 +0000] "GET /bdd/orders/ANATR/1 HTTP/1.1" 500 135 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
 GET /bdd/orders/ANATR/1 500 135 - 232.396 ms
+::1 - - [22/Nov/2022:16:52:36 +0000] "GET /web/balance/0x6C523b2B818798A314752677df355DA023584f51 HTTP/1.1" 404 193 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /web/balance/0x6C523b2B818798A314752677df355DA023584f51 404 193 - 14.676 ms
+::1 - - [22/Nov/2022:16:53:43 +0000] "GET /web/balance/0x6C523b2B818798A314752677df355DA023584f51 HTTP/1.1" 404 193 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /web/balance/0x6C523b2B818798A314752677df355DA023584f51 404 193 - 5.344 ms
+::1 - - [22/Nov/2022:16:53:51 +0000] "GET /web/balance/0x6C523b2B818798A314752677df355DA023584f51 HTTP/1.1" 404 193 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /web/balance/0x6C523b2B818798A314752677df355DA023584f51 404 193 - 1.857 ms
+::1 - - [22/Nov/2022:17:06:12 +0000] "GET /web/balance/0x6C523b2B818798A314752677df355DA023584f51 HTTP/1.1" 404 193 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /web/balance/0x6C523b2B818798A314752677df355DA023584f51 404 193 - 5.135 ms
+::1 - - [22/Nov/2022:17:06:15 +0000] "GET /web/balance/0x6C523b2B818798A314752677df355DA023584f51 HTTP/1.1" 404 193 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /web/balance/0x6C523b2B818798A314752677df355DA023584f51 404 193 - 1.461 ms
+::1 - - [22/Nov/2022:17:09:11 +0000] "GET /web/balance/0x6C523b2B818798A314752677df355DA023584f51 HTTP/1.1" 404 193 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /web/balance/0x6C523b2B818798A314752677df355DA023584f51 404 193 - 2.432 ms
+::1 - - [22/Nov/2022:17:17:24 +0000] "GET /web/balance/0x6C523b2B818798A314752677df355DA023584f51 HTTP/1.1" 404 193 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /web/balance/0x6C523b2B818798A314752677df355DA023584f51 404 193 - 2.019 ms
+::1 - - [22/Nov/2022:17:18:59 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3344/web3/balance/0x6C523b2B818798A314752677df355DA023584f51" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /favicon.ico 404 150 - 0.385 ms
+::1 - - [22/Nov/2022:17:55:24 +0000] "GET /web3/eth/blocks HTTP/1.1" 404 154 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /web3/eth/blocks 404 154 - 14.368 ms
+::1 - - [22/Nov/2022:17:56:19 +0000] "GET /web3/eth/blocks/30000 HTTP/1.1" 500 12 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /web3/eth/blocks/30000 500 12 - 276.715 ms
+::1 - - [22/Nov/2022:17:56:48 +0000] "GET /web3/eth/blocks/300000 HTTP/1.1" 500 12 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /web3/eth/blocks/300000 500 12 - 261.118 ms
+::1 - - [22/Nov/2022:17:56:51 +0000] "GET /web3/eth/blocks/300000 HTTP/1.1" 500 12 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /web3/eth/blocks/300000 500 12 - 10.017 ms
+::1 - - [22/Nov/2022:17:58:54 +0000] "GET /web3/balance/0x6C523b2B818798A314752677df355DA023584f51 HTTP/1.1" 500 41 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /web3/balance/0x6C523b2B818798A314752677df355DA023584f51 500 41 - 1267.784 ms
+::1 - - [22/Nov/2022:17:59:43 +0000] "GET /web3/blocks/30000 HTTP/1.1" 404 156 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /web3/blocks/30000 404 156 - 7.562 ms
+::1 - - [22/Nov/2022:18:00:36 +0000] "GET /web3/blocks/300000 HTTP/1.1" 404 157 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /web3/blocks/300000 404 157 - 3.035 ms
+::1 - - [22/Nov/2022:18:01:11 +0000] "GET /web3/blocks/300000 HTTP/1.1" 404 157 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /web3/blocks/300000 404 157 - 16.199 ms
+::1 - - [22/Nov/2022:18:01:40 +0000] "GET /web3/blocks/300000 HTTP/1.1" 404 157 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /web3/blocks/300000 404 157 - 3.403 ms
+::1 - - [22/Nov/2022:18:01:42 +0000] "GET /web3/blocks/300000 HTTP/1.1" 404 157 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /web3/blocks/300000 404 157 - 4.634 ms

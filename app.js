@@ -4,6 +4,13 @@ const fs = require("fs")
 const fileUpload = require("express-fileupload");
 const app = ex();
 const { Pool } = require('pg');
+const Web3 = require("web3");
+const { parse } = require("path");
+
+
+const WEB3_PROVIDER = 'https://mainnet.infura.io/v3/85a06f6b60274f36b6843bcec82e1919'
+
+const web3 = new Web3(WEB3_PROVIDER)
 
 const pool = new Pool({
     localhost: "localhost",
@@ -99,6 +106,27 @@ app.get("/bdd/orders/:cliente/:id", async (req, res) => {
         res.status(500).send(error)
     }
 })
-
+app.get("/web3/balance/:address", async (req, res) => {
+        try {
+            const balance = await web3.eth.getBalance(req.params.address)
+            const balanceEth = parseFloat(balance)/1e18
+            res.send(balanceEth.toString)
+    
+        } catch (error) {
+             res.status(500).send({error})
+            
+        }
+        })
+app.get("/web3/eth/blocks/:numero", async (req, res) => {
+        try {
+            const bloque = await web3.eth.getBlock(req.params.numero)
+            res.send(bloque)
+    
+        } catch (error) {
+             res.status(500).send ({error})
+            
+        }            
+        
+        })
 
 app.listen(3344)
