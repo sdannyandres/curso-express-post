@@ -26,3 +26,7 @@ GET /bdd/customers/ANATR 500 150 - 221.385 ms
 GET /bdd/customers/ANATR 500 150 - 136.643 ms
 ::1 - - [21/Nov/2022:23:41:41 +0000] "GET /bdd/customers/ALFKI HTTP/1.1" 500 150 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
 GET /bdd/customers/ALFKI 500 150 - 202.967 ms
+::1 - - [22/Nov/2022:00:04:32 +0000] "GET /bdd/orders/ANATR/106251 HTTP/1.1" 500 2 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /bdd/orders/ANATR/106251 500 2 - 237.622 ms
+::1 - - [22/Nov/2022:00:05:18 +0000] "GET /bdd/orders/ANATR/1 HTTP/1.1" 500 135 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+GET /bdd/orders/ANATR/1 500 135 - 232.396 ms

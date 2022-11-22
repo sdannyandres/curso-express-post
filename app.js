@@ -65,7 +65,7 @@ app.post("/uploadFicherosMultiple", async (req, res) => {
     res.send("ficheros subidos")
 }
 )
-
+//-- para acceder a todos los clientes--//
 app.get("/bdd/customers", async (req, res) => {
     try {
         const respuesta = await pool.query("select * from customers");
@@ -76,7 +76,7 @@ app.get("/bdd/customers", async (req, res) => {
     }
 
 })
-
+//-- para acceder al cliente por su identificacion o nombre en la base de datos--//
 app.get("/bdd/customers/:id", async (req, res) => {
     try {
         const respuesta = await pool.query("select * from customers where customer_id = $1", [req.params.id])
@@ -85,12 +85,17 @@ app.get("/bdd/customers/:id", async (req, res) => {
         res.status(500).send(error)
     }
 })
-
-app.get("/bdd/orders/:id", async (req, res) => {
+//--para acceder a las ordenes de un cliente en la base de datos--//
+app.get("/bdd/orders/:cliente/:id", async (req, res) => {
     try {
-        const respuesta = await pool.query("select * from orders where customer_id = $1", [req.params.id])
-        res.send(respuesta.rows)
-    } catch (error) {
+        const respuesta = await pool.query("select * from orders where customer_id = $1, and order_id =$2"
+        [req.params.cliente, req.params.id])
+      if (respuesta.rows.length == 0) {  
+        res.status(404).send({descripcion:"no existe la factura cliente"})
+    } else {
+    res.send (respuesta.row[0]) 
+    }
+    }   catch (error) {
         res.status(500).send(error)
     }
 })
